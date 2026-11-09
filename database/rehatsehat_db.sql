@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS sleepmate_db
+CREATE DATABASE IF NOT EXISTS rehatsehat_db
     CHARACTER SET utf8mb4
     COLLATE utf8mb4_unicode_ci;
 
-USE sleepmate_db;
+USE rehatsehat_db;
 
 CREATE TABLE IF NOT EXISTS mahasiswa (
     id_mahasiswa INT AUTO_INCREMENT PRIMARY KEY,
@@ -43,9 +43,9 @@ CREATE TABLE IF NOT EXISTS catatan_tidur (
 
 -- Data contoh agar halaman tidak kosong saat pertama kali dijalankan.
 INSERT INTO mahasiswa (nim, nama, email) VALUES
-('2301001', 'Alya Putri', 'alya@example.com'),
-('2301002', 'Raka Pratama', 'raka@example.com'),
-('2301003', 'Nadia Safitri', 'nadia@example.com');
+('2304145', 'Alya Putri', 'alyaputri@upi.com'),
+('2403499', 'Raka Pratama', 'rakapratama@upi.com'),
+('2597611', 'Nadia Safitri', 'nadiasafitri@upi.com');
 
 INSERT INTO jadwal_tidur (mahasiswa_id, tanggal, target_tidur, target_bangun, catatan) VALUES
 (1, '2026-11-04', '22:00:00', '06:00:00', 'Mengurangi penggunaan ponsel sebelum tidur.'),
@@ -56,3 +56,4 @@ INSERT INTO catatan_tidur (mahasiswa_id, tanggal, jam_tidur, jam_bangun, kualita
 (1, '2026-11-03', '22:15:00', '06:10:00', 'Baik', 'Bangun terasa cukup segar.'),
 (2, '2026-11-03', '23:45:00', '06:20:00', 'Cukup', 'Tidur agak larut karena tugas.'),
 (3, '2026-11-03', '21:50:00', '05:40:00', 'Baik', 'Tidak terbangun pada malam hari.');
+rehatsehat_dbcatatan_tidurjadwal_tidurmahasiswa
