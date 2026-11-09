@@ -4,7 +4,7 @@ class Database {
     // Alamat server database.
     private string $host = 'localhost';
     // Nama database yang digunakan oleh aplikasi SleepMate.
-    private string $database = 'sleepmate_db';
+    private string $database = 'rehatsehat_db';
     // Username MySQL bawaan XAMPP biasanya root.
     private string $username = 'root';
     // Password MySQL bawaan XAMPP biasanya kosong.
