@@ -11,12 +11,12 @@ class Mahasiswa{
         $this->db = $db;
     }
 
-    /* Data mahasiswa diurutkan berdasarkan nama secara ascending.*/
+    /* Data mahasiswa diurutkan berdasarkan id mahasiswa secara ascending.*/
     public function getAll(): array{
         // Query untuk mengambil seluruh kolom yang diperlukan.
         $sql = 'SELECT id_mahasiswa, nim, nama, email, created_at
                 FROM mahasiswa
-                ORDER BY nama ASC';
+                ORDER BY id_mahasiswa ASC';
 
         // Mempersiapkan query menggunakan PDO Prepared Statement.
         $stmt = $this->db->prepare($sql);

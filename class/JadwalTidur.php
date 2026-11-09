@@ -18,7 +18,7 @@ class JadwalTidur {
                     m.nama AS nama_mahasiswa, m.nim
                 FROM jadwal_tidur AS j
                 INNER JOIN mahasiswa AS m ON m.id_mahasiswa = j.mahasiswa_id
-                ORDER BY j.tanggal DESC, j.target_tidur ASC';
+                ORDER BY j.id_jadwal ASC';
 
         // prepare() menyiapkan perintah SQL sebelum dieksekusi.
         $stmt = $this->db->prepare($sql);

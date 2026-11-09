@@ -18,7 +18,7 @@ class CatatanTidur {
                 FROM catatan_tidur AS c
                 /* JOIN menghubungkan kedua tabel berdasarkan primary key dan foreign key. */
                 INNER JOIN mahasiswa AS m ON m.id_mahasiswa = c.mahasiswa_id
-                ORDER BY c.tanggal DESC, c.jam_tidur DESC';
+                ORDER BY c.id_catatan ASC';
 
         // prepare() menyiapkan perintah SQL sebelum dijalankan.
         $stmt = $this->db->prepare($sql);
