@@ -12,7 +12,7 @@ $formAction = $isEditing ? 'mahasiswa_update' : 'mahasiswa_create';
         <h2>Data Mahasiswa</h2>
         <!-- Penjelasan singkat mengenai halaman. -->
         <p>
-            Kelola data mahasiswa yang menggunakan aplikasi SleepMate.
+            Kelola data mahasiswa yang menggunakan aplikasi RehatSehat.
         </p>
     </div>
 </section>
@@ -110,7 +110,7 @@ $formAction = $isEditing ? 'mahasiswa_update' : 'mahasiswa_create';
             <h3>Daftar Mahasiswa</h3>
             <p>
                 Berikut merupakan seluruh mahasiswa yang terdaftar
-                dalam aplikasi SleepMate.
+                dalam aplikasi RehatSehat.
             </p>
 
         </div>
